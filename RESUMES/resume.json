@@ -1,0 +1,106 @@
+"""
+questions that arise: sql or nosql, tables for these or json? keep in mind user will have chance to delete out stufff and add in stuff in the future.
+have different id fields or user_id field? how should all this work?
+I'd have langchain Document object for Technical Skills, Experience, Projects, Education
+"""
+{
+    "Techinal Skills": {
+        "languages": ["Python", "JavaScript", "C++"],
+        "frameworks": ["React", "Django", "Node.js"],
+        "databases": ["MySQL", "MongoDB"],
+        "tools": ["Git", "Docker", "AWS"]
+    },
+    "Experience":[
+        {
+            "role": "Software Engineer",
+            "company": "Tech Company",
+            "city": "San Francisco",
+            "province/state": "CA",
+            "country": "USA",
+            "start_date": "2020-01-01",
+            "end_date": "2022-12-31",
+            "skills": ["Python", "Django", "AWS"],
+            "bullet_points": [
+                "Developed and maintained web applications using Django and React.",
+                "Implemented RESTful APIs to enhance application functionality.",
+                "Collaborated with cross-functional teams to deliver high-quality software solutions."
+            ]
+        },
+        {
+            "role": "Frontend Developer",
+            "company": "Web Solutions",
+            "city": "New York",
+            "province/state": "NY",
+            "country": "USA",
+            "start_date": "2018-06-01",
+            "end_date": "2019-12-31",
+            "skills": ["JavaScript", "React"],
+            "bullet_points": [
+                "Designed and implemented user interfaces using React.",
+                "Optimized web applications for maximum speed and scalability.",
+                "Collaborated with designers to create responsive and visually appealing websites."
+            ]
+        }
+    ],
+    "Projects": [
+        {
+            "name": "Personal Portfolio Website",
+            "description": "A personal portfolio website to showcase my projects and skills.",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "link": "",
+            "start_date": "2021-01-01",
+            "end_date": "2021-03-31",
+            "bullet_points": [
+                "Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript.",
+                "Implemented interactive features to enhance user experience.",
+                "Deployed the website on GitHub Pages for public access."
+            ]
+        }
+        ,
+        {
+            "name": "E-commerce Platform",
+            "description": "An e-commerce platform for small businesses to sell their products online.",
+            "skills": ["Python", "Django", "MySQL"],
+            "link": "",
+            "start_date": "2020-05-01",
+            "end_date": "2020-12-31",
+            "bullet_points": [
+                "Developed a full-stack e-commerce platform using Django and MySQL.",
+                "Implemented features such as product listing, shopping cart, and payment processing.",
+                "Collaborated with a team of developers to ensure timely delivery of the project."
+            ]
+        }
+    ],
+    "Education": [
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "school": "University of Technology",
+            "city": "Los Angeles",
+            "province/state": "CA",
+            "country": "USA",
+            "start_date": "2016-09-01",
+            "end_date": "2020-06-30",
+            "skills": ["Data Structures", "Algorithms", "Software Engineering"],
+            "bullet_points": [
+                "Graduated with honors and a GPA of 3.8.",
+                "Completed coursework in data structures, algorithms, and software engineering.",
+                "Participated in coding competitions and hackathons to enhance problem-solving skills."
+            ]
+        },
+        {
+            "degree": "Master of Science in Computer Science",
+            "school": "Tech University",
+            "city": "Boston",
+            "province/state": "MA",
+            "country": "USA",
+            "start_date": "2020-09-01",
+            "end_date": "2022-06-30",
+            "skills": ["Machine Learning", "Artificial Intelligence", "Data Analysis"],
+            "bullet_points": [
+                "Conducted research in machine learning and artificial intelligence.",
+                "Published papers in reputable conferences and journals.",
+                "Collaborated with professors and peers on various research projects."
+            ]
+        }
+    ]
+}
